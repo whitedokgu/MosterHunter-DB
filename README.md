@@ -1,2 +1,2 @@
 # MosterHunter-DB
-link[https://whitedokgu.github.io/MosterHunter-DB/index.html]
+[link](https://whitedokgu.github.io/MosterHunter-DB/index.html)
