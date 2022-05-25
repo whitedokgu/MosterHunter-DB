@@ -1,0 +1,12 @@
+@import "/css/reset.css";
+@import "/css/header.css";
+@import "/css/search.css";
+@import "/css/nav.css";
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: white;
+  font-family: "Noto Sans KR", sans-serif;
+}
