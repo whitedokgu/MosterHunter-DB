@@ -1,7 +1,7 @@
-@import "reset.css";
-@import "header.css";
-@import "search.css";
-@import "nav.css";
+@import "./reset.css";
+@import "./header.css";
+@import "./search.css";
+@import "./nav.css";
 
 body {
   height: 100vh;
