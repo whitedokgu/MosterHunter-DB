@@ -1,0 +1,40 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    width: 1170px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #header #nav-bar .container {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  #header #nav-bar .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

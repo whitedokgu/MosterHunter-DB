@@ -1,0 +1,33 @@
+.form-control {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  width: 100%;
+  padding: 6.5px 8.5px;
+  line-height: 1.3333333333em;
+  color: #333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: all 0.15s ease-out 0s;
+}
+::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+:focus {
+  border-color: #337ab7;
+  outline: 0;
+}
+::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+:disabled,
+[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}

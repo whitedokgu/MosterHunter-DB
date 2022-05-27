@@ -1,0 +1,35 @@
+.top-search {
+  width: 100%;
+  margin-left: 50px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .top-search {
+    width: 274px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top-search {
+    width: 100px;
+  }
+}
+
+.top-search form {
+  display: block;
+  margin-top: 0em;
+}
+
+.top-search .form-control {
+  padding-right: 24px;
+}
+.top-search .btn-search {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
