@@ -1,6 +1,11 @@
 /* === reset === */
 @import "./reset.css";
 
+@import "./reset.css";
+@import "./header.css";
+@import "./search.css";
+@import "./nav.css";
+
 /* === container === */
 @import "./container/container.css";
 
