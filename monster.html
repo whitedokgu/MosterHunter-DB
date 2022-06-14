@@ -8,31 +8,32 @@
       src="https://kit.fontawesome.com/cab8f91457.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/style.css" />   
-       <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Monster Hunter - 공략</title>
   </head>
   <body>
     <header id="header">
       <div class="header">
-        <div class="container">        
-          <a class="logo" href="./index.html"></a>        
-        <div class="search">
-          <form method="get">
-            <input class="form-control" placeholder="전체 검색" />
-            <button type="button" class="btn-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+        <div class="container">
+          <div class="logo-cover">
+            <a class="logo" href="./index.html"></a>
+          </div>
+          <div class="top-search">
+            <form method="get">
+              <input id="search" class="form-control" placeholder="전체 검색" />
+              <button type="button" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-      
 
       <nav id="nav-bar">
-        <div class="nav-container">
+        <div class="container">
           <ul class="main-nav">
-            <li class="active"><a href="monster.html">몬스터</a></li></span>
-            <li><a href="#/skills.html">스킬</a></li>
+            <li class="active"><a href="./monster.html">몬스터</a></li>
+            <li><a href="#/skills">스킬</a></li>
             <li><a href="#/weapon">무기</a></li>
             <li><a href="#/armor">장비</a></li>
             <li><a href="#/charms">호석</a></li>
@@ -43,22 +44,666 @@
         </div>
       </nav>
     </header>
-    <article id="content" style="height: 731px;">
+
+    <article id="contents">
       <section class="container">
-        <div class="page-header">
+        <div class="page-header" data-fit-aside="">
           <h2 class="page-title">몬스터 도감</h2>
           <div class="right">
             <form data-grid-search="" onsubmit="grid.refresh(1);return false">
-              <input class="form-control input-sm" placeholder="검색어 입력" name="stxt">
-              <button class="hidden">검색</button>
+              <input
+                id="search"
+                class="form-control input-sm"
+                placeholder="검색어 입력"
+                type="text"
+                onkeyup="myFunction()"
+              /><button class="hidden">검색</button>
             </form>
-          </div>      
+          </div>
+        </div>
+
+        <div data-fit-content style="height: 940px">
+          <div id="grid-container">
+            <table class="monster-table">
+              <thead>
+                <tr>
+                  <th class="th-blank" rowspan="2"></th>
+                  <th class="th-name" rowspan="2">몬스터</th>
+                  <th class="th-nickname" rowspan="2">별명</th>
+                  <th class="th-type" rowspan="2">종류</th>
+                  <th class="th-destruction" rowspan="2">파괴부위</th>
+                  <th class="th-weak" colspan="3">약점부위</th>
+                  <th class="th-available" colspan="5">유효속성</th>
+                  <th class="th-status" colspan="5">상태이상</th>
+                </tr>
+                <tr>
+                  <th class="th-weak">
+                    <i class="weapon great-sword"></i>
+                  </th>
+                  <th class="th-weak">
+                    <i class="weapon hammer"></i>
+                  </th>
+                  <th class="th-weak">
+                    <i class="weapon bullet"></i>
+                  </th>
+
+                  <th class="th-available">
+                    <i class="element fire"></i>
+                  </th>
+                  <th class="th-available">
+                    <i class="element water"></i>
+                  </th>
+                  <th class="th-available">
+                    <i class="element light"></i>
+                  </th>
+                  <th class="th-available">
+                    <i class="element ice"></i>
+                  </th>
+                  <th class="th-available">
+                    <i class="element dragon"></i>
+                  </th>
+
+                  <th class="th-status">
+                    <i class="debuff poison"></i>
+                  </th>
+                  <th class="th-status">
+                    <i class="debuff sleep"></i>
+                  </th>
+                  <th class="th-status">
+                    <i class="debuff paralysis"></i>
+                  </th>
+                  <th class="th-status">
+                    <i class="debuff blastblight"></i>
+                  </th>
+                  <th class="th-status">
+                    <i class="debuff stun"></i>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <!-- 밀라보레아스 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Miraboreas.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">밀라보레아스</td>
+                  <td class="td-nickname">흑룡</td>
+                  <td class="td-type">고룡종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">머리<br />날개<br />몸통</td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리</td>
+                  <td class="td-weak hammer">머리</td>
+                  <td class="td-weak bullet"><i class="fa-solid fa-x"></i></td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                </tr>
+
+                <!-- 얼음 칼날 벨리오로스 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Frostfang Barioth.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">얼음 칼날을 찬 벨리오로스</td>
+                  <td class="td-nickname">빙아룡</td>
+                  <td class="td-type">비룡종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">머리<br />가시<br />꼬리</td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리</td>
+                  <td class="td-weak hammer">머리</td>
+                  <td class="td-weak bullet">머리</td>
+
+                  <!-- 유효속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                </tr>
+
+                <!-- 알바트리온 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Alatreon.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">알바트리온</td>
+                  <td class="td-nickname">황흑룡</td>
+                  <td class="td-type">고룡종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">뿔<br />날개<br />꼬리</td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리<br />앞다리</td>
+                  <td class="td-weak hammer">머리<br />앞다리</td>
+                  <td class="td-weak bullet">몸통<br />꼬리</td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    (밤)<br />
+                    <i class="fa-solid fa-x"></i><br />
+                    (여명)<br />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    (여명)<br />
+                    <i class="fa-solid fa-x"></i><br />
+                    (밤)<br />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                </tr>
+
+                <!-- 사납게 터지는 브라키디오스 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Raging Brachydios.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">사납게 터지는 브라키디오스</td>
+                  <td class="td-nickname">쇄룡</td>
+                  <td class="td-type">수룡종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">머리<br />앞다리<br />꼬리</td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리<br />꼬리</td>
+                  <td class="td-weak hammer">머리</td>
+                  <td class="td-weak bullet">머리<br />꼬리</td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                </tr>
+
+                <!-- 격앙 라잔 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Furious Rajang.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">격앙 라잔</td>
+                  <td class="td-nickname">금사자</td>
+                  <td class="td-type">아수종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">뿔(2회)<br />앞다리</td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리</td>
+                  <td class="td-weak hammer">머리</td>
+                  <td class="td-weak bullet">머리</td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                </tr>
+
+                <!-- 무페토-지바 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Safi'jiiva.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">무페토-지바</td>
+                  <td class="td-nickname">명적룡</td>
+                  <td class="td-type">고룡종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">
+                    머리<br />앞다리<br />날개<br />꼬리
+                  </td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">앞다리</td>
+                  <td class="td-weak hammer">머리</td>
+                  <td class="td-weak bullet">날개</td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                </tr>
+
+                <!-- 진오우거 아종 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Stygian Zinogre.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">진오우거 아종</td>
+                  <td class="td-nickname">옥랑룡</td>
+                  <td class="td-type">아룡종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">
+                    머리<br />앞다리<br />등<br />꼬리
+                  </td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리<br />앞다리</td>
+                  <td class="td-weak hammer">머리<br />앞다리</td>
+                  <td class="td-weak bullet">머리<br />앞다리</td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                </tr>
+
+                <!-- 라잔 -->
+                <tr>
+                  <td class="td-img">
+                    <img
+                      src="./img/icons/monster/Rajang.jpg"
+                      style="width: 100%"
+                    />
+                  </td>
+                  <td class="td-name">라잔</td>
+                  <td class="td-nickname">금사자</td>
+                  <td class="td-type">아수종</td>
+
+                  <!-- 파괴부위 -->
+                  <td class="td-destruction">뿔<br />앞다리<br />꼬리</td>
+
+                  <!-- 약점부위 -->
+                  <td class="td-weak great-sword">머리</td>
+                  <td class="td-weak hammer">머리</td>
+                  <td class="td-weak bullet">머리</td>
+
+                  <!-- 약점속성 -->
+                  <!-- 불 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 물 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 번개 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+                  <!-- 얼음 -->
+                  <td class="td-available">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 용 -->
+                  <td class="td-available">
+                    <i class="fa-solid fa-x"></i>
+                  </td>
+
+                  <!-- 상태이상 -->
+                  <!-- 독 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 수면 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 마비 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 폭파 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </td>
+                  <!-- 기절 -->
+                  <td class="td-status">
+                    <i class="fas fa-star"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </article>
-
-    
   </body>
 
-  
+  <script></script>
 </html>

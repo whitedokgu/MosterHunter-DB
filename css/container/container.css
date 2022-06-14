@@ -9,8 +9,8 @@
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
-    width: 750px;
+    max-width: 860px;
+    width: 860px;
   }
 }
 @media (min-width: 992px) {
@@ -19,10 +19,10 @@
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
-    max-width: 1140px;
-    width: 1170px;
+    max-width: 1210px;
+    width: 1230px;
   }
 }
 

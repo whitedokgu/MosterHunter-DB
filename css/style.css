@@ -1,19 +1,18 @@
 /* === reset === */
 @import "./reset.css";
 
-@import "./reset.css";
-@import "./header.css";
-@import "./search.css";
-@import "./nav.css";
-
 /* === container === */
 @import "./container/container.css";
-
+@import "./container/contents.css";
+@import "./container/table.css";
+@import "./container/icon.css";
+@import "./container/scroll.css";
 /* === header === */
 @import "./header/header.css";
 @import "./header/nav.css";
 @import "./header/top-serach.css";
 @import "./header/form.css";
+@import "./header/page-header.css";
 
 html,
 body {
@@ -24,4 +23,8 @@ body {
   font-size: 14px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hidden {
+  display: none !important;
 }

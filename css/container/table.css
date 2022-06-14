@@ -1,0 +1,85 @@
+#contents {
+  padding: 15px 0;
+  height: 100%;
+}
+
+.page-header {
+  margin: 0;
+  width: 1210px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 9px;
+}
+
+.page-header .page-title {
+  margin: 0;
+  font-size: 17px;
+}
+
+.page-header .right {
+  margin-left: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+[data-fit-content] .grid-container {
+  height: 100%;
+}
+
+.grid-container {
+  color: #333;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Verdana, sans-serif;
+  line-height: 1.33334;
+}
+
+table.monster-table {
+  margin: 0;
+  width: 1210px;
+  max-width: none;
+  text-align: center;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+table.monster-table th,
+table.monster-table td {
+  padding: 5px;
+  vertical-align: middle;
+  border-top: 1px solid rgb(100, 100, 100);
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+table.monster-table th.th-blank {
+  width: 70px;
+}
+
+table.monster-table th.th-name {
+  width: 140px;
+}
+
+table.monster-table th.th-nickname,
+table.monster-table th.th-destruction {
+  width: 80px;
+}
+
+table.monster-table th.th-type {
+  width: 60px;
+}
+
+table.monster-table th.th-weak {
+  width: 180px;
+}
+
+table.monster-table th.th-available {
+  width: 300px;
+}
+
+table.monster-table th.th-status {
+  width: 300px;
+}

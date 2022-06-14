@@ -1,0 +1,95 @@
+.weapon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+.great-sword {
+  background-image: url("/img/icons/week/weapon-great-sword.png");
+}
+
+.hammer {
+  background-image: url("/img/icons/week/weapon-hammer.png");
+}
+
+.bullet {
+  background-image: url("/img/icons/week/weapon-bullet.png");
+}
+
+.element {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+.fire {
+  background-image: url("/img/icons/element/element_fire.png");
+}
+.water {
+  background-image: url("/img/icons/element/element_water.png");
+}
+.light {
+  background-image: url("/img/icons/element/element_light.png");
+}
+.ice {
+  background-image: url("/img/icons/element/element_ice.png");
+}
+.dragon {
+  background-image: url("/img/icons/element/element_dragon.png");
+}
+
+.debuff {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+.poison {
+  background-image: url("/img/icons/debuff/debuff_poison.png");
+}
+.sleep {
+  background-image: url("/img/icons/debuff/debuff_sleep.png");
+}
+.paralysis {
+  background-image: url("/img/icons/debuff/debuff_paralysis.png");
+}
+.blastblight {
+  background-image: url("/img/icons/debuff/debuff_blastblight.png");
+}
+.stun {
+  background-image: url("/img/icons/debuff/debuff_stun.png");
+}
+
+.fa-star {
+  color: #d4a010;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fa-x {
+  color: rgb(202, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
