@@ -11,15 +11,15 @@
   text-indent: -9999px;
 }
 
-.great-sword {
+.th-weak .great-sword {
   background-image: url("/img/icons/week/weapon-great-sword.png");
 }
 
-.hammer {
+.th-weak .hammer {
   background-image: url("/img/icons/week/weapon-hammer.png");
 }
 
-.bullet {
+.th-weak .bullet {
   background-image: url("/img/icons/week/weapon-bullet.png");
 }
 
@@ -36,19 +36,19 @@
   text-indent: -9999px;
 }
 
-.fire {
+.th-available .fire {
   background-image: url("/img/icons/element/element_fire.png");
 }
-.water {
+.th-available .water {
   background-image: url("/img/icons/element/element_water.png");
 }
-.light {
+.th-available .light {
   background-image: url("/img/icons/element/element_light.png");
 }
-.ice {
+.th-available .ice {
   background-image: url("/img/icons/element/element_ice.png");
 }
-.dragon {
+.th-available .dragon {
   background-image: url("/img/icons/element/element_dragon.png");
 }
 
@@ -65,19 +65,19 @@
   text-indent: -9999px;
 }
 
-.poison {
+.th-status .poison {
   background-image: url("/img/icons/debuff/debuff_poison.png");
 }
-.sleep {
+.th-status .sleep {
   background-image: url("/img/icons/debuff/debuff_sleep.png");
 }
-.paralysis {
+.th-status .paralysis {
   background-image: url("/img/icons/debuff/debuff_paralysis.png");
 }
-.blastblight {
+.th-status .blastblight {
   background-image: url("/img/icons/debuff/debuff_blastblight.png");
 }
-.stun {
+.th-status .stun {
   background-image: url("/img/icons/debuff/debuff_stun.png");
 }
 
