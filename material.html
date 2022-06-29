@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cab8f91457.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/material/list.css">
+    <title>Monster Hunter - 공략</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header">
+        <div class="container">
+          <div class="logo-cover">
+            <a class="logo" href="./monster.html"></a>
+          </div>
+        </div>
+      </div>
+
+      <nav id="nav-bar">
+        <div class="container">
+          <ul class="main-nav">
+            <li><a href="./monster.html">몬스터</a></li>
+            <li class="active"><a href="material.html">소재</a></li>
+            <li><a href="#/weapon">무기</a></li>
+            <li><a href="#/armor">장비</a></li>
+            <li><a href="#/charms">호석</a></li>
+            <li><a href="#/jewels">장식품</a></li>
+            <li><a href="#/items">아이템</a></li>
+            <li><a href="#/quests">퀘스트</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <article id="contents">
+        <section class="container">
+            <div class="page-header" data-fit-aside="">
+              <h2 class="page-title">몬스터 헌터 소재</h2>
+              <div class="right">
+                <form data-grid-search="" onsubmit="grid.refresh(1);return false">
+                  <!-- 엔터키 방지 -->
+                  <input hidden="hidden" />
+                  <input
+                    id="search"
+                    class="form-control input-sm"
+                    placeholder="검색어 입력"
+                    type="text"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div data-fit-content style="height: 940px">
+                <div id="grid-container material_itemlist">
+                    <ul id="itemList">
+                        <li>
+                            <a class="item-list" href="#">1기단 티켓</a>
+                        </li>
+                        <li>
+                            <a class="item-list" href="#">S.T.A.R.S. 배지</a>
+                        </li>
+                        <li>
+                            <a class="item-list" href="#">SF V 티켓</a>
+                        </li>
+                        <li>
+                            <a class="item-list" href="#">SF V 티켓 II</a>
+                        </li>
+                        <li>
+                            <a class="item-list" href="#">SF V 티켓 II＇</a>
+                        </li>
+                        <li>
+                            <a class="item-list" href="#">가론코인</a>
+                        </li>
+                        <li>
+                            <a class="item-list" href="#">가마루코인</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+    </article>
+  </body>
+  <script src="/js/search-mat.js"></script>
+</html>

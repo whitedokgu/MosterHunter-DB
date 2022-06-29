@@ -1,0 +1,21 @@
+#material_itemlist {
+  display: block;
+  float: none;
+}
+
+#contents ul {
+  list-style: none;
+  float: left;
+  width: 1210px;
+  border-top: 1px solid rgb(100, 100, 100);
+  border-bottom: 1px solid rgb(100, 100, 100);
+  padding: 6px 0px;
+}
+
+#contents ul li {
+  float: left;
+  padding-top: 4px;
+  height: 18px;
+  width: 25%;
+  margin: 0;
+}
