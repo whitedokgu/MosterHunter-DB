@@ -1,6 +1,7 @@
 #material_itemlist {
   display: block;
   float: none;
+  font-size: 14px;
 }
 
 #contents ul {
@@ -10,6 +11,7 @@
   border-top: 1px solid rgb(100, 100, 100);
   border-bottom: 1px solid rgb(100, 100, 100);
   padding: 6px 0px;
+  margin-bottom: 40px;
 }
 
 #contents ul li {
@@ -17,5 +19,5 @@
   padding-top: 4px;
   height: 18px;
   width: 25%;
-  margin: 0;
+  margin-bottom: 5px;
 }
